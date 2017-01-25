@@ -1,0 +1,11 @@
+// exercise 2
+
+INSERT INTO Account() VALUES();
+
+
+INSERT INTO AddressBook (name) VALUES('testing');    
+
+
+INSERT INTO Entry (lastName) VALUES('Testingtest');
+INSERT INTO Entry (firstName) VALUES('Testing');
+INSERT INTO Entry (birthday) VALUES(2015-01-23);
