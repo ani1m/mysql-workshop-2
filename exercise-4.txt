@@ -1,0 +1,29 @@
+UPDATE Account SET password = 1234 WHERE id = 1;
+From Account;
++----+-------+----------+---------------------+------------+
+| id | email | password | createdOn           | modifiedOn |
++----+-------+----------+---------------------+------------+
+|  1 |       | 1234     | 0000-00-00 00:00:00 | NULL       |
++----+-------+----------+---------------------+------------+
+1 row in set (0.00 sec)
+
+
+UPDATE AddressBook SET name = 'modifying' WHERE id = 1;            
+SELECT * From AddressBook;
++----+-----------+-----------+---------------------+------------+
+| id | accountId | name      | createdOn           | modifiedOn |
++----+-----------+-----------+---------------------+------------+
+|  1 |         0 | modifying | 0000-00-00 00:00:00 | NULL       |
++----+-----------+-----------+---------------------+------------+
+1 row in set (0.00 sec)
+
+update Entry set contentLineTwo = "555-5555" where contentLineTwo is null;
+
+SELECT * FROM Entry;
++----+---------------+-----------+-------------+---------------------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
+| id | addressBookId | firstName | lastName    | birthday            | type | subtype | contentLineOne | contentLineTwo | contentLineThree | contentLineFour | contentLineFive |
++----+---------------+-----------+-------------+---------------------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
+|  1 |             0 |           | Testingtest | NULL                | home | phone   |                | 555-5555       | NULL             | NULL            | NULL            |
+|  2 |             0 | Testing   | NULL        | NULL                | home | phone   |                | 555-5555       | NULL             | NULL            | NULL            |
+|  3 |             0 |           | NULL        | 0000-00-00 00:00:00 | home | phone   |                | 555-5555       | NULL             | NULL            | NULL            |
++----+---------------+-----------+-------------+---------------------+------+---------+----------------+----------------+------------------+-----------------+-----------------
