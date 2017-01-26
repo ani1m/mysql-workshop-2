@@ -1,0 +1,44 @@
+mysql> Select email From Account where id = '63';
++-------------------------------------------------+
+| email                                           |
++-------------------------------------------------+
+| consectetuer.rhoncus.Nullam@temporloremeget.org |
++-------------------------------------------------+
+1 row in set (0.00 sec)
+
+
+SELECT name FROM AddressBook WHERE accountid = '3';                               
++---------------------------------+
+| name                            |
++---------------------------------+
+| Donec Incorporated              |
+| Ipsum Nunc LLC                  |
+| In Consectetuer Ltd             |
+| Lacus Aliquam Rutrum Industries |
+| Ac Ltd                          |
+| Mauris Consulting               |
+| Ornare Corporation              |
++---------------------------------+
+7 rows in set (0.01 sec)
+
+
+Select createdOn FROM addressBook WHERE name = 'Lorem Foundation';
+ERROR 1146 (42S02): Table 'decodemtl_addressbook.addressBook' doesn't exist
+mysql> Select createdOn FROM AddressBook WHERE name = 'Lorem Foundation';                
++---------------------+
+| createdOn           |
++---------------------+
+| 2016-06-26 02:43:41 |
+| 2015-05-04 14:28:16 |
++---------------------+
+2 rows in set (0.00 sec)
+
+
+mysql> select * From AddressBook Where name = 'Lorem Foundation';
++-----+-----------+------------------+---------------------+---------------------+
+| id  | accountId | name             | createdOn           | modifiedOn          |
++-----+-----------+------------------+---------------------+---------------------+
+|   5 |        84 | Lorem Foundation | 2016-06-26 02:43:41 | 2015-04-06 10:24:41 |
+| 153 |        12 | Lorem Foundation | 2015-05-04 14:28:16 | 2015-05-24 20:46:26 |
++-----+-----------+------------------+---------------------+---------------------+
+2 rows in set (0.01 sec)
