@@ -1,0 +1,20 @@
+ select * FROM Account;
++----+-------+----------+---------------------+------------+
+| id | email | password | createdOn           | modifiedOn |
++----+-------+----------+---------------------+------------+
+|  1 |       | 1234     | 0000-00-00 00:00:00 | NULL       |
++----+-------+----------+---------------------+------------+
+1 row in set (0.00 sec)
+
+mysql> DROP TABLE Account;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> SHOW TABLEs;
++---------------------------------+
+| Tables_in_decodemtl_addressbook |
++---------------------------------+
+| AddressBook                     |
+| Entry                           |
++---------------------------------+
+2 rows in set (0.00 sec)
+
