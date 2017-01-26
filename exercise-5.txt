@@ -1,0 +1,14 @@
+select * FROM Entry;
++----+---------------+-----------+-------------+---------------------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
+| id | addressBookId | firstName | lastName    | birthday            | type | subtype | contentLineOne | contentLineTwo | contentLineThree | contentLineFour | contentLineFive |
++----+---------------+-----------+-------------+---------------------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
+|  1 |             0 |           | Testingtest | NULL                | home | phone   |                | 555-5555       | NULL             | NULL            | NULL            |
+|  2 |             0 | Testing   | NULL        | NULL                | home | phone   |                | 555-5555       | NULL             | NULL            | NULL            |
+|  3 |             0 |           | NULL        | 0000-00-00 00:00:00 | home | phone   |                | 555-5555       | NULL             | NULL            | NULL            |
++----+---------------+-----------+-------------+---------------------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
+3 rows in set (0.00 sec)
+
+mysql> truncate table Entry;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> select * From Entry;
